@@ -28,6 +28,6 @@ A high-performance file upload application built with vanilla JavaScript (XHR) a
 
 ### Installation
 ```bash
-git clone https://github.com/takicode/fileUpload_App.git
-cd File_upload
+git clone https://github.com/takicode/fileUploader.git
+cd fileupload
 npm install
