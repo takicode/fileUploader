@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File upload</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="fileContainer">
+    <div class="header">
+      <h1>File Upload App</h1>
+      <p>Upload your file quickly and secure</p> 
+    </div>
+    <form action="/http://localhost:3000/upload" class="upload-form" id="uploadForm" enctype="multipart/form-data">
+      <div class="file-input-wrapper" id="dropZone">
+        <label for="fileInput" class="upload-input-label">
+          <div class="upload-icon"><img src="./icon/upload_8600432.png" alt="upload_icon" class="icon" ></div>
+          <div class="file-input-text">Drag & drop files or <span>browse</span></div>
+          <div class="file-input-hint">Supports all file types up to 5GB</div>
+          <input type="file" id="fileInput" class="file">
+        </label>
+      </div>
+      <div class="file-info" id="fileInfo">Selected file: <span id="fileName"></span >(<span id="fileSize"></span>)
+      </div>
+      <div class="progress-bar" id="progressBar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <p id="percent"></p>
+      <button type="submit" class="submit" id="submitBtn" disabled>Upload File</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body> 
+</html>
